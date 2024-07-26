@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation</title>
+    <style>
+      .parent {
+        width: 100%;
+        height: 75vh;
+        background-color: purple;
+      }
+      .child {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        background-color: mediumturquoise;
+        transition: transform 2s;
+        animation: moving-element 1s linear 5;
+      }
+      @keyframes moving-element {
+        form {
+          transform: translate(0, 0);
+        }
+        to {
+          transform: translate(500px, 0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+  </body>
+</html>
